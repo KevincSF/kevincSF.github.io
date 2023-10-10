@@ -6,99 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Economics Student - Homepage</title>
-  <style>
-    /* Additional CSS for the Hovering Menu */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
 
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #2a9d8f;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown-content a {
-      color: #f6f0ed;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #264653;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 600px) {
-      .dropdown-content {
-        position: static;
-        display: block;
-        background-color: transparent;
-        box-shadow: none;
-      }
-
-      .dropdown-content a {
-        padding: 8px 16px;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Home</a>
-          <div class="dropdown-content">
-            <a href="#">Submenu 1</a>
-            <a href="#">Submenu 2</a>
-            <a href="#">Submenu 3</a>
-          </div>
-        </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-      </ul>
+    <nav class="navbar">
+      <a href="#" class="active">Home</a>
+      <div style="float: right;">
+        <a href="projects.html">Projects</a>
+        <a href="blogs.html">Blogs</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome to My Economics Website</h1>
-        <p>I am a passionate economics student, exploring the world of economics and its impact on society.</p>
-        <a href="about.html" class="cta-button">Learn More</a>
-      </div>
+    <section class="main">
+      <div class="main-content">
+        <h1>Welcome to SFEconomics</h1>
+        <p>This is Zechuan Chen's personal website</p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-item">
+            <a href="https://instagram.com/sfkc87">
+              <h2>Ins</h2>
+              <img class="svgc" sizes="auto" src="icons8-instagram-500.svg">
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="https://github.com/KevincSF">
+              <h2>Github</h2>
+              <img class="svgc" sizes="auto" src="github-mark.svg">
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="linktr.ee/zechuanchen"></a>
+              <h2>linktree</h2>
+              <img class="svgc" sizes="auto" src="linktree-seeklogo.com.svg">
+            </a>
+          </div>  
+        </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2023 Economics Student. All rights reserved.</p>
   </footer>
-
-  <!-- JavaScript for the Hovering Menu -->
-  <script>
-    // Get all dropdown buttons
-    var dropdowns = document.getElementsByClassName("dropdown");
-
-    // Add event listener to each dropdown button
-    for (var i = 0; i < dropdowns.length; i++) {
-      dropdowns[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.getElementsByClassName("dropdown-content")[0];
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-      });
-    }
-  </script>
 </body>
 
 </html>
