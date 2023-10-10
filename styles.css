@@ -150,7 +150,6 @@ body {
         width: auto;
     }
 .svgc {
-    object-fit: cover;
-    width: 80%;
-    height: 80%;
+    width: 25vh;
+    height: 25vh;
 }
