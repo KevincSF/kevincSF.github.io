@@ -36,6 +36,20 @@
     .dropdown-content a:hover {
       background-color: #264653;
     }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .dropdown-content {
+        position: static;
+        display: block;
+        background-color: transparent;
+        box-shadow: none;
+      }
+
+      .dropdown-content a {
+        padding: 8px 16px;
+      }
+    }
   </style>
 </head>
 
@@ -78,12 +92,10 @@
 
     // Add event listener to each dropdown button
     for (var i = 0; i < dropdowns.length; i++) {
-      dropdowns[i].addEventListener("mouseover", function() {
-        this.getElementsByClassName("dropdown-content")[0].style.display = "block";
-      });
-
-      dropdowns[i].addEventListener("mouseout", function() {
-        this.getElementsByClassName("dropdown-content")[0].style.display = "none";
+      dropdowns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.getElementsByClassName("dropdown-content")[0];
+        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
       });
     }
   </script>
