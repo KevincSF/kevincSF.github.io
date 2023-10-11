@@ -162,6 +162,7 @@ body {
 .svgc {
     width: 25vw;
     height: 25vw;
+    max-height: 45vh;
 }
 
 a {
