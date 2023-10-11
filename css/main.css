@@ -152,7 +152,7 @@ body {
     font-size: 30px;
     text-align: center;
     flex-basis: 33.3333333%;
-    height: 50vh;
+    height: 45vh;
   }
 
     .contact-item:hover {
@@ -162,7 +162,7 @@ body {
 .svgc {
     width: 25vw;
     height: 25vw;
-    max-height: 45vh;
+    max-height: 40vh;
 }
 
 a {
