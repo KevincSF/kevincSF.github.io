@@ -148,6 +148,11 @@ footer {
   max-width: 30vh;
   max-height: 30vh;
 }
+.png {
+  width: 20vw;
+  height: auto;
+  object-fit: contain;
+}
 
 a {
   text-decoration: none;
