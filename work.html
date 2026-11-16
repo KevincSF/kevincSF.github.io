@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research projects by Zechuan (Kevin) Chen.">
+  <title>Projects &middot; Zechuan (Kevin) Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <title>Economics Student - Working Papers</title>
 </head>
-
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="active">Home</a>
-        <div class="nav-links">
-          <a href="work.html">Projects</a>
-          <a href="Notes/obsidian/math-analysis/ec119/part-1-set-theory/1.1-set-and-definition.html">Notes</a>
-        </div>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Zechuan (Kevin) Chen</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a class="active" href="work.html">Projects</a>
+        <a href="Notes/obsidian/math-analysis/ec119/part-1-set-theory/1.1-set-and-definition.html">Notes</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="working-papers">
+    <section>
+      <h1>Projects</h1>
+      <p class="subtitle">Research on social media, engagement and platform behaviour.</p>
     </section>
-    <section class="project">
-      <div class="project">
-        <h2>Research projects</h2>
 
-        <div class="paper">
-          <h3><a href="work/pdf/URSS_Zechuan_Chen.pdf" target="_blank">Exploring User Engagement in Political YouTube News: A Study on BBC Breaking News</a></h3>
-          <p class="abstract">This study explores the negativity bias in user engagement with YouTube news and the effectiveness of negative sentiment in attracting attention. I investigate the difference in user engagment in the form of comment and liking comments between political and non-political news. The paper explore whether political news attracts a higher quantity of negative sentiment comments and the differences in likes distributed to negative sentiment comments in political and non-political news, and revealing a stronger negativity bias in user comment in political news, but also showing that relative less likes are distributed to negative comments in political news. This paper is based on analyzing comments and likes from BBC Breaking News videos.</p>
+    <section>
+      <h2>Research</h2>
+
+      <div class="entry">
+        <div class="entry-head"><h3>Toxic Language and Social Endorsement: Evidence from YouTube News Comments</h3><span class="date">2026</span></div>
+        <div class="org">BSc dissertation, University of Warwick</div>
+        <p>Does toxic language win or lose social approval online? I collect 1.6 million top-level comments on 4,912 videos from four major US news channels through the YouTube Data API. Toxicity is scored with Google's Perspective API, political content is classified with a natural-language-inference model, and similar comments are grouped with TF-IDF and cosine-similarity nearest neighbours so that toxic and non-toxic comments are compared within the same discussion.</p>
+        <p>Using high-dimensional fixed-effects models and augmented inverse-probability weighting (random forests with cross-fitting), I find that toxic comments receive about 19% fewer likes and are 7 percentage points less likely to be liked at all. Toxic content can hold attention while lowering endorsement, so engagement metrics should not be read as a single measure of user preference.</p>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">YouTube Data API</span><span class="tag">NLP</span><span class="tag">Fixed effects</span><span class="tag">AIPW</span>
         </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head"><h3>Exploring User Engagement in Political YouTube News: A Study on BBC Breaking News</h3><span class="date">2024</span></div>
+        <div class="org">Undergraduate Research Support Scheme (URSS), University of Warwick</div>
+        <p>This study explores negativity bias in user engagement with YouTube news. It compares comments and comment likes between political and non-political BBC Breaking News videos, with sentiment scored by a RoBERTa model and relationships estimated with OLS and instrumental variables. Political news attracts more negative comments, while negative comments on political news receive relatively fewer likes.</p>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">RoBERTa</span><span class="tag">OLS / IV</span>
+        </div>
+        <p class="project-links">
+          <a href="work/pdf/URSS_Zechuan_Chen.pdf" target="_blank">Paper (PDF)</a>
+          <a href="https://urss.warwick.ac.uk/items/show/626" target="_blank">URSS Showcase poster</a>
+        </p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2023 Economics Student. All rights reserved.</p>
+    <p>&copy; 2026 Zechuan (Kevin) Chen</p>
   </footer>
 </body>
-
 </html>

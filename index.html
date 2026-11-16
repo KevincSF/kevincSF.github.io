@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <title>Kevin - Homepage</title>
+  <meta name="description" content="Zechuan (Kevin) Chen: MSc Economics student at UCL. Digital platforms, behavioural economics and causal inference.">
+  <title>Zechuan (Kevin) Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="#">Home</a>
-      <a href="Notes/obsidian/math-analysis/ec119/part-1-set-theory/1.1-set-and-definition.html">Notes</a>
-      <a href="work.html">Projects</a>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Zechuan (Kevin) Chen</a>
+      <div class="links">
+        <a class="active" href="index.html">Home</a>
+        <a href="work.html">Projects</a>
+        <a href="Notes/obsidian/math-analysis/ec119/part-1-set-theory/1.1-set-and-definition.html">Notes</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="main">
-      <div class="main-content">
-        <h1>Zechuan Chen</h1>
-        <p>This is Zechuan Chen's personal website</p>
-        <p>Also known as Kevin, an economics student at Warwick</p>
-        <p>Enjoys studying (math and econ), coding, board games, and video games</p>
+    <section class="hero">
+      <h1>Zechuan (Kevin) Chen</h1>
+      <p class="subtitle">MSc Economics student at UCL &middot; BSc Economics, University of Warwick</p>
+      <p>I study how people behave on digital platforms, using large-scale platform data, randomised experiments and causal inference. My work so far looks at toxic content, negativity and engagement on social media, and at how platform interventions such as content moderation and feed ranking change user behaviour.</p>
+      <p>Outside economics I enjoy maths, coding, board games and video games (including making my own).</p>
+      <div class="contact-links">
+        <a class="pill" href="https://github.com/KevincSF"><img src="images/github-mark.png" alt="">GitHub</a>
+        <a class="pill" href="https://www.linkedin.com/in/zechuan-chen-184845294"><img src="images/LI-In-Bug.png" alt="">LinkedIn</a>
+        <a class="pill" href="mailto:m13590169966@163.com">m13590169966@163.com</a>
       </div>
-      <div class="contact-container">
-        <div class="contact-item">
-          <a href="https://github.com/KevincSF">
-            <h2>Github</h2>
-            <img class="png" src="images/github-mark.png" alt="Github Logo">
-          </a>
-        </div>
-        <div class="contact-item">
-          <a href="www.linkedin.com/in/zechuan-chen-184845294">
-            <h2>LinkedIn</h2>
-            <img class="png" src="images/LI-In-Bug.png" alt="LinkedIn Logo">
-          </a>
-        </div>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <div class="tags">
+        <span class="tag">Economics of digital platforms</span>
+        <span class="tag">Behavioural economics</span>
+        <span class="tag">Content moderation</span>
+        <span class="tag">Causal inference</span>
+        <span class="tag">Text as data</span>
       </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head"><h3>MSc Economics</h3><span class="date">2026 &ndash; 2027 (expected)</span></div>
+        <div class="org">University College London (UCL)</div>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><h3>BSc Economics</h3><span class="date">2023 &ndash; 2026</span></div>
+        <div class="org">University of Warwick</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="entry-head"><h3>Research Assistant (Paid Internship)</h3><span class="date">Jan 2025 &ndash; Feb 2026</span></div>
+        <div class="org">Department of Economics, University of Warwick &middot; Warwick Internship Scheme (WISE)</div>
+        <ul>
+          <li>Data analysis for randomised controlled trials on social media platform regulation.</li>
+          <li>Built a pipeline turning billion-row user activity logs into a user&ndash;day&ndash;platform panel for a feed-ranking experiment (Prosocial Ranking Challenge).</li>
+          <li>Event-study and difference-in-differences analysis of a content moderation field experiment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected projects</h2>
+      <div class="entry">
+        <div class="entry-head"><h3>Toxic Language and Social Endorsement on YouTube News</h3><span class="date">2026</span></div>
+        <div class="org">BSc dissertation, University of Warwick</div>
+        <p>Using 1.6 million comments on 4,912 videos from four major US news channels, I find that toxic comments receive about 19% fewer likes than similar comments in the same discussion: toxic content can hold attention while lowering endorsement.</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head"><h3>Negativity Bias in Political YouTube News</h3><span class="date">2024</span></div>
+        <div class="org">Undergraduate Research Support Scheme (URSS), University of Warwick</div>
+        <p class="project-links"><a href="work/pdf/URSS_Zechuan_Chen.pdf" target="_blank">Paper (PDF)</a></p>
+      </div>
+      <p><a href="work.html">All projects &rarr;</a></p>
     </section>
   </main>
 
   <footer>
-    <p>University Email: Zechuan.Chen@warwick.ac.uk</p>
-    <p>Personal Email: zechuanchen@outlook.com</p>
+    <p>&copy; 2026 Zechuan (Kevin) Chen</p>
   </footer>
 </body>
-
 </html>
